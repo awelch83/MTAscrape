@@ -1,5 +1,5 @@
 import requests
-import urllib.request
+import urllib
 import time
 from bs4 import BeautifulSoup
 
