@@ -11,5 +11,5 @@ current_atag = soup.findAll('a')[35]
 link = current_atag['href']
 url_download = 'http://web.mta.info/developers/' + link
 
-urllib.request.urlretrieve(url_download,'./'+link[link.find('/turnstile_')+1:])
+urllib.request.urlretrieve(url_download,'./turnstile/'+link[link.find('/turnstile_')+1:])
 
