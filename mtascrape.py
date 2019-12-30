@@ -12,4 +12,4 @@ for i in range(35,len(soup.findAll('a'))+1):
     link = current_atag['href']
     url_download = 'http://web.mta.info/developers/' + link
     urllib.request.urlretrieve(url_download,'./turnstile/'+link[link.find('/turnstile_')+1:])
-    time.sleep(1)
+    time.sleep(.25)
